@@ -35,6 +35,8 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - Resizable always-on-top pinned references with opacity control.
 - Preferred monitor selection for full-screen captures.
 - Optional privacy-conscious update checks.
+- Drag captures directly into Explorer and compatible applications.
+- Optional portable data mode stores settings and history in a VistaData folder beside the executable.
 - Optional Stripe support links with locally controlled reminders.
 - Light, dark, and follow-system appearance modes.
 - Comprehensive Help, Release Notes, and Roadmap windows inside the application.
@@ -51,4 +53,4 @@ The portable executables are currently unsigned. Windows SmartScreen may therefo
 
 ## Current Version
 
-**Vista Capture v1.4.0**
+**Vista Capture v1.5.0**
