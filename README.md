@@ -32,6 +32,10 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - PNG and JPEG export options.
 - Optional automatic saving with configurable filename templates.
 - Optional local capture history with count, size, and age limits.
+- Resizable always-on-top pinned references with opacity control.
+- Preferred monitor selection for full-screen captures.
+- Optional privacy-conscious update checks.
+- Optional Stripe support links with locally controlled reminders.
 - Light, dark, and follow-system appearance modes.
 - Comprehensive Help, Release Notes, and Roadmap windows inside the application.
 
@@ -47,4 +51,4 @@ The portable executables are currently unsigned. Windows SmartScreen may therefo
 
 ## Current Version
 
-**Vista Capture v1.3.0**
+**Vista Capture v1.4.0**
