@@ -54,3 +54,10 @@ The portable builds are currently unsigned. Windows SmartScreen may therefore di
 ## Current Version
 
 **Vista Capture v1.5.0**
+
+This refreshed build corrects blur and pixelate rendering on high-DPI captures and restores reliable annotation drawing, undo, and redo behaviour.
+
+### SHA-256 Checksums
+
+- `Vista Capture-1.5.0-x64-portable.exe`: `A28B1464BB65A4C2CEE5F433378BDB7085B19ECAC1A3650C51BFD7A2A3484F1C`
+- `Vista Capture-1.5.0-arm64-win.zip`: `1F9897BA369B743989DE34074E3884EF7E37EA084B26409EBEDA1BA9A732775B`
