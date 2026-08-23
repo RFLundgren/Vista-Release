@@ -45,6 +45,7 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - Portable Windows application with no installation required.
 - Native x64 and ARM64 builds.
 - Entire-screen, window, dialog, and drawn-area capture modes.
+- Configurable Draw Area overlay with preset or custom colours, adjustable opacity, live preview, and pixel-safe isolation.
 - Configurable global shortcuts and PrintScreen support where Windows and keyboard firmware permit it.
 - Automatic clipboard copying after capture and editing.
 - Annotation tools for highlights, circles, text, crop, arrows, numbered steps, blur, and pixelation.
@@ -73,11 +74,17 @@ The portable builds are currently unsigned. Windows SmartScreen may therefore di
 
 ## Current Version
 
-**Vista Capture v1.5.0**
+**Vista Capture v1.6.1**
 
-This refreshed build corrects blur and pixelate rendering on high-DPI captures and restores reliable annotation drawing, undo, and redo behaviour.
+### Highlights
+
+- Configurable Draw Area overlay hue and opacity with persistent preferences.
+- Reliable left/right Ctrl, Shift, and Alt handling in the native shortcut helper.
+- Non-blocking native hook diagnostics and stale modifier-key reconciliation.
+- Faster Window and Dialog pickers using lightweight previews without reducing final capture resolution.
+- Defensive overlay colour validation and expanded regression coverage.
 
 ### SHA-256 Checksums
 
-- `Vista Capture-1.5.0-x64-portable.exe`: `A28B1464BB65A4C2CEE5F433378BDB7085B19ECAC1A3650C51BFD7A2A3484F1C`
-- `Vista Capture-1.5.0-arm64-win.zip`: `1F9897BA369B743989DE34074E3884EF7E37EA084B26409EBEDA1BA9A732775B`
+- `Vista Capture-1.6.1-x64-portable.exe`: `493454B665BC7FA6ECDF53F1C8AE7683254C822C334D9B3B36DC0D2EB79C2B17`
+- `Vista Capture-1.6.1-arm64-win.zip`: `42F54D2D8109F746762945DAC3562C2269CA80A6FD7C3668194B5EE162A55B63`
