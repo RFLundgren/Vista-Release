@@ -75,9 +75,12 @@ The portable builds are currently unsigned. Windows SmartScreen may therefore di
 
 ## Current Version
 
-**Vista Capture v1.6.1**
+**Vista Capture v1.6.2**
 
 ### Highlights
+
+- Captures now appear on the shelf before clipboard conversion and background processing begins.
+- Filename generation and clipboard transfer run concurrently, while notifications and persistence no longer block the visible workflow.
 
 - Configurable Draw Area overlay hue and opacity with persistent preferences.
 - Reliable left/right Ctrl, Shift, and Alt handling in the native shortcut helper.
@@ -87,6 +90,6 @@ The portable builds are currently unsigned. Windows SmartScreen may therefore di
 
 ### SHA-256 Checksums
 
-- `Vista Capture-1.6.1-x64-portable.exe`: `493454B665BC7FA6ECDF53F1C8AE7683254C822C334D9B3B36DC0D2EB79C2B17`
-- `Vista Capture-1.6.1-arm64-portable.exe`: `13886ADCBA0D7C33BEA3DDF9DB6FE09187520DE1B6BB9776C1B5A408B073F87B`
-- `Vista Capture-1.6.1-arm64-win.zip`: `42F54D2D8109F746762945DAC3562C2269CA80A6FD7C3668194B5EE162A55B63`
+- `Vista Capture-1.6.2-x64-portable.exe`: `41A48B4D2C14B67E7ED9A2408C55FC65868C3275E306ADD4EF68E28EA21DF0E1`
+- `Vista Capture-1.6.2-arm64-portable.exe`: `D79FE26BCB65D41CD2520B31B03D0E92FB449E7DADCC57F6E303F14E981BACFA`
+- `Vista Capture-1.6.2-arm64-win.zip`: `1358C399F09A33FE7AAB0EC13F0D6A6B7EAE64F3AE448095B48F4ADA103B6ADA`
