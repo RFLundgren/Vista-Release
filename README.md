@@ -47,10 +47,11 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - Native x64 and ARM64 builds.
 - Entire-screen, window, dialog, and drawn-area capture modes.
 - Configurable Draw Area overlay with preset or custom colours, adjustable opacity, live preview, and pixel-safe isolation.
+- A dock icon toggle arms and disarms delayed capture in one click, remembers the last duration used, and by default automatically returns to instant after one delayed capture.
 - Configurable global shortcuts and PrintScreen support where Windows and keyboard firmware permit it.
 - Automatic clipboard copying after capture and editing.
 - Annotation tools for highlights, circles, text, crop, arrows, numbered steps, blur, and pixelation.
-- Undo, redo, individual saving, bulk saving, and Menu-based multi-select actions.
+- Undo, redo, individual saving, bulk saving, Menu-based multi-select actions, and a per-thumbnail close button to remove a single capture from the shelf.
 - PNG and JPEG export options.
 - Optional automatic saving with configurable filename templates.
 - Optional local capture history with count, size, and age limits.
@@ -59,6 +60,7 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - Optional privacy-conscious update checks.
 - Drag captures directly into Explorer and compatible applications.
 - Optional portable data mode stores settings and history in a VistaData folder beside the executable.
+- Closing the dock window sends it to the system tray instead of quitting, matching minimize; use the tray menu's Quit command to fully close Vista Capture.
 - Optional Stripe support links with locally controlled reminders.
 - Light, dark, and follow-system appearance modes.
 - Comprehensive Help, Release Notes, and Roadmap windows inside the application.
@@ -67,7 +69,7 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 
 Vista Capture works locally and does not require an account or cloud service. Screenshots are not uploaded by the application. Preferences and any capture history you explicitly enable are stored in your Windows user profile.
 
-To update, quit Vista Capture from its notification-area icon. Replace the portable executable, or replace the extracted ARM64 application folder, then start the new build.
+To update, quit Vista Capture using the tray menu's **Quit** command (closing the dock window alone sends it to the tray rather than exiting). Replace the portable executable, or replace the extracted ARM64 application folder, then start the new build.
 
 ## Windows Security Notice
 
@@ -75,21 +77,18 @@ The portable builds are currently unsigned. Windows SmartScreen may therefore di
 
 ## Current Version
 
-**Vista Capture v1.6.2**
+**Vista Capture v1.6.6**
 
 ### Highlights
 
-- Captures now appear on the shelf before clipboard conversion and background processing begins.
-- Filename generation and clipboard transfer run concurrently, while notifications and persistence no longer block the visible workflow.
-
-- Configurable Draw Area overlay hue and opacity with persistent preferences.
-- Reliable left/right Ctrl, Shift, and Alt handling in the native shortcut helper.
-- Non-blocking native hook diagnostics and stale modifier-key reconciliation.
-- Faster Window and Dialog pickers using lightweight previews without reducing final capture resolution.
-- Defensive overlay colour validation and expanded regression coverage.
+- A dock icon toggle arms and disarms delayed capture in one click without opening Settings, remembers the last duration used, and offers 3, 5, or 10 seconds from a small popover. It defaults to automatically returning to instant after one delayed capture; Settings can keep it on instead.
+- Closing the dock window now sends it to the system tray instead of quitting, matching minimize. The tray menu's Quit command still fully exits.
+- Save All and Clear All sit side by side in the docked shelf toolbar, and each capture shelf thumbnail has a close button to remove a single capture without entering multi-select mode.
+- The portable launcher's self-extraction folder is now pinned to a fixed name, so relaunching no longer accumulates duplicate tray icons under Windows Settings > Other system tray icons.
+- New captures appear on the shelf before clipboard conversion and background processing begins, so the workflow no longer waits on notifications, export caching, or persistence.
 
 ### SHA-256 Checksums
 
-- `Vista Capture-1.6.2-x64-portable.exe`: `41A48B4D2C14B67E7ED9A2408C55FC65868C3275E306ADD4EF68E28EA21DF0E1`
-- `Vista Capture-1.6.2-arm64-portable.exe`: `D79FE26BCB65D41CD2520B31B03D0E92FB449E7DADCC57F6E303F14E981BACFA`
-- `Vista Capture-1.6.2-arm64-win.zip`: `1358C399F09A33FE7AAB0EC13F0D6A6B7EAE64F3AE448095B48F4ADA103B6ADA`
+- `Vista Capture-1.6.6-x64-portable.exe`: `F90D856C346AD63F6E0282DE8C3F48F3A87A4783BF90BE20CE42D0126E36571F`
+- `Vista Capture-1.6.6-arm64-portable.exe`: `C9875990C14BBF2C2DE2B27E6C6A02824EF68418C1ADAE7C0CAA71A1689506B5`
+- `Vista Capture-1.6.6-arm64-win.zip`: `C90AB2812031BD2AE7A8A16B3216C1D5B5719BD01FA0E2CE9D6D742AB47DFF44`
