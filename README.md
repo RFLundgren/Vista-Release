@@ -1,23 +1,24 @@
 # Vista Capture
 
-Vista Capture is a lightweight, portable screenshot and annotation application for Windows. It runs without installation and is available for both x64 and ARM64 systems.
+Vista Capture is a lightweight, portable screenshot and annotation application for Windows. It runs without installation and is available for both x64 and ARM64 systems. An optional per-user installer is also available for anyone who prefers a conventional setup.
 
 ## Download
 
-Download the latest portable build from the [Releases page](https://github.com/RFLundgren/Vista-Release/releases/latest):
+Download the latest build from the [Releases page](https://github.com/RFLundgren/Vista-Release/releases/latest):
 
-- **x64 EXE**: for most Windows PCs using Intel or AMD processors; run it directly.
-- **ARM64 portable EXE**: single-file option for Windows PCs using an ARM processor, including supported Snapdragon devices.
-- **ARM64 ZIP**: alternative folder-based build; extract the complete folder, then run Vista Capture.exe.
+- **x64 portable EXE**: for most Windows PCs using Intel or AMD processors; run it directly, no installation.
+- **x64 installer EXE**: optional conventional setup with a Start Menu shortcut and uninstaller. Installs to your user profile only; no administrator access required.
+- **ARM64 portable EXE**: single-file portable option for Windows PCs using an ARM processor, including supported Snapdragon devices.
+- **ARM64 installer EXE**: optional conventional setup for ARM64, with the same no-administrator, per-user install as the x64 installer.
+- **ARM64 ZIP**: alternative folder-based portable build; extract the complete folder, then run Vista Capture.exe.
 
 If you are unsure, open **Settings > System > About** in Windows and check **System type**.
 
 ## Using Vista Capture
 
 1. Download the build that matches your computer.
-2. Place either portable executable in your preferred folder, or extract the complete ARM64 ZIP to that folder.
-3. Run the portable executable or Vista Capture.exe inside the extracted ARM64 folder. No installer or administrator access is normally required.
-4. Use **Menu > Settings** to choose a default capture mode and configure global shortcuts.
+2. **Portable:** place the portable executable in your preferred folder, or extract the complete ARM64 ZIP to that folder, then run it directly. **Installer:** run the setup EXE; it installs to your user profile only and adds a Start Menu and desktop shortcut. Neither option requires administrator access.
+3. Use **Menu > Settings** to choose a default capture mode and configure global shortcuts.
 
 Vista Capture can capture an entire display, a window, a dialog, or an area drawn with the mouse. New captures are copied automatically to the Windows clipboard and held on a compact shelf for quick reuse.
 
@@ -43,7 +44,7 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 
 ## Features
 
-- Portable Windows application with no installation required.
+- Portable Windows application with no installation required, or an optional per-user installer for a conventional setup.
 - Native x64 and ARM64 builds.
 - Entire-screen, window, dialog, and drawn-area capture modes.
 - Configurable Draw Area overlay with preset or custom colours, adjustable opacity, live preview, and pixel-safe isolation.
@@ -67,28 +68,33 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 
 ## Portable Data and Privacy
 
-Vista Capture works locally and does not require an account or cloud service. Screenshots are not uploaded by the application. Preferences and any capture history you explicitly enable are stored in your Windows user profile.
+Vista Capture works locally and does not require an account or cloud service. Screenshots are not uploaded by the application. Preferences and any capture history you explicitly enable are stored in your Windows user profile in either distribution.
 
-To update, quit Vista Capture using the tray menu's **Quit** command (closing the dock window alone sends it to the tray rather than exiting). Replace the portable executable, or replace the extracted ARM64 application folder, then start the new build.
+**Portable:** to update, quit Vista Capture using the tray menu's **Quit** command (closing the dock window alone sends it to the tray rather than exiting). Replace the portable executable, or replace the extracted ARM64 application folder, then start the new build.
+
+**Installer:** run the new version's installer over the existing install to update in place, or use Windows' **Apps & Features** to uninstall.
 
 ## Windows Security Notice
 
-The portable builds are currently unsigned. Windows SmartScreen may therefore display an **Unknown publisher** warning. Download Vista Capture only from this repository's official Releases page.
+The portable and installer builds are currently unsigned. Windows SmartScreen may therefore display an **Unknown publisher** warning. Download Vista Capture only from this repository's official Releases page.
 
 ## Current Version
 
-**Vista Capture v1.6.6**
+**Vista Capture v1.6.7**
 
 ### Highlights
 
+- Added optional per-user installer builds for x64 and arm64 alongside the existing portable executables. The installer requires no administrator access, installs to the current user's profile, and adds a Start Menu and desktop shortcut with a standard uninstaller. The portable build remains the primary, recommended download.
 - A dock icon toggle arms and disarms delayed capture in one click without opening Settings, remembers the last duration used, and offers 3, 5, or 10 seconds from a small popover. It defaults to automatically returning to instant after one delayed capture; Settings can keep it on instead.
-- Closing the dock window now sends it to the system tray instead of quitting, matching minimize. The tray menu's Quit command still fully exits.
-- Save All and Clear All sit side by side in the docked shelf toolbar, and each capture shelf thumbnail has a close button to remove a single capture without entering multi-select mode.
-- The portable launcher's self-extraction folder is now pinned to a fixed name, so relaunching no longer accumulates duplicate tray icons under Windows Settings > Other system tray icons.
-- New captures appear on the shelf before clipboard conversion and background processing begins, so the workflow no longer waits on notifications, export caching, or persistence.
+- Each capture shelf thumbnail now has a close button to remove a single capture without entering multi-select mode.
+- Closing the dock window sends it to the system tray instead of quitting, matching minimize. The tray menu's Quit command still fully exits.
+- Save All and Clear All sit side by side in the docked shelf toolbar for a more compact layout.
+- The portable launcher's self-extraction folder is pinned to a fixed name, so relaunching no longer accumulates duplicate tray icons under Windows Settings > Other system tray icons.
 
 ### SHA-256 Checksums
 
-- `Vista Capture-1.6.6-x64-portable.exe`: `F90D856C346AD63F6E0282DE8C3F48F3A87A4783BF90BE20CE42D0126E36571F`
-- `Vista Capture-1.6.6-arm64-portable.exe`: `C9875990C14BBF2C2DE2B27E6C6A02824EF68418C1ADAE7C0CAA71A1689506B5`
-- `Vista Capture-1.6.6-arm64-win.zip`: `C90AB2812031BD2AE7A8A16B3216C1D5B5719BD01FA0E2CE9D6D742AB47DFF44`
+- `Vista Capture-1.6.7-x64-portable.exe`: `ACCA0C7DF9A978DBE7E9C3D4321C99986BF5ADCEEBC82B64EC7EEE2DEE299186`
+- `Vista Capture-1.6.7-x64-setup.exe`: `3CDC98D2D6CAFDCB39891EEFD49AB69138A60DB0F8ECE4AF4BDA78D7DD0191E6`
+- `Vista Capture-1.6.7-arm64-portable.exe`: `23C5698BA117E4E79A0444B08C9F0FE8BCB466D0155556E47E74B5BC6039A9EE`
+- `Vista Capture-1.6.7-arm64-setup.exe`: `ED4DD547263BC42C17D5D7390C4BFBD81AACDE2267EFF9F55243C435AAEA7724`
+- `Vista Capture-1.6.7-arm64-win.zip`: `77A842E470201B41C42C928D41F255F5D3C5AB28B86FAC2B47638BA3D8451196`
