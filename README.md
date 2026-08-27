@@ -61,7 +61,7 @@ Vista Capture can capture an entire display, a window, a dialog, or an area draw
 - Optional privacy-conscious update checks.
 - Drag captures directly into Explorer and compatible applications.
 - Optional portable data mode stores settings and history in a VistaData folder beside the executable.
-- Closing the dock window sends it to the system tray instead of quitting, matching minimize; use the tray menu's Quit command to fully close Vista Capture. The dock also reappears automatically after a capture completes if it was hidden.
+- Minimises to the Windows taskbar like a normal window; closing sends it to the system tray instead, and use the tray menu's Quit command to fully close Vista Capture. The dock also reappears automatically after a capture completes if it was hidden.
 - A Settings option keeps the dock window on top of others or lets it behave like a normal window.
 - Optional Stripe support links with locally controlled reminders.
 - Light, dark, and follow-system appearance modes.
@@ -81,20 +81,20 @@ The portable and installer builds are currently unsigned. Windows SmartScreen ma
 
 ## Current Version
 
-**Vista Capture v1.6.8**
+**Vista Capture v1.6.9**
 
 ### Highlights
 
+- Minimise now uses the normal Windows taskbar instead of hiding to the tray, matching standard window behaviour. The close button is unchanged and still sends the dock to the tray rather than quitting; previously both actions did the same thing.
 - Added a Settings option (Appearance > Window layering) to keep the dock on top of other windows or let it behave like a normal window, replacing the previous unconditional always-on-top behaviour.
-- The dock now restores automatically after a capture completes or is cancelled, even if it was hidden in the tray beforehand, so the shelf is visible without a manual restore.
+- The dock restores automatically after a capture completes or is cancelled, even if it was hidden or minimised beforehand, so the shelf is visible without a manual restore.
 - Added optional per-user installer builds for x64 and arm64 alongside the existing portable executables. The installer requires no administrator access, installs to the current user's profile, and adds a Start Menu and desktop shortcut with a standard uninstaller. The portable build remains the primary, recommended download.
 - A dock icon toggle arms and disarms delayed capture in one click without opening Settings, remembers the last duration used, and offers 3, 5, or 10 seconds from a small popover. It defaults to automatically returning to instant after one delayed capture; Settings can keep it on instead.
-- Each capture shelf thumbnail now has a close button to remove a single capture without entering multi-select mode.
 
 ### SHA-256 Checksums
 
-- `Vista Capture-1.6.8-x64-portable.exe`: `1AC13222175439B338B8F85F87F2DEA855328D5FD1517832C2402C5115F9C665`
-- `Vista Capture-1.6.8-x64-setup.exe`: `A6E08CC3C3E99531C0F6448734FB0CCDC040B98D4F1213FA674C326B204895A5`
-- `Vista Capture-1.6.8-arm64-portable.exe`: `CDDC9A1F6D12AD1832262C6AB199E859AAC0D71F0C88E2F3E097A34516B1515F`
-- `Vista Capture-1.6.8-arm64-setup.exe`: `5481024766472A021AE4E5E1C8D7074A71F2075911EB181AE4208647EA93C1A9`
-- `Vista Capture-1.6.8-arm64-win.zip`: `6A41BD930677B2D2D0FCB61C9114519E2C84F55E8A2E463A700AA0C05978A6D3`
+- `Vista Capture-1.6.9-x64-portable.exe`: `487E4345193DF7F615C061586A69F3F1171A0302AB22098E3CBD0B77946FFA7B`
+- `Vista Capture-1.6.9-x64-setup.exe`: `CBD9B7B62173D19FFE8119FC2C90EDC53593A5C86A5564C3D15BC762A52E6DF9`
+- `Vista Capture-1.6.9-arm64-portable.exe`: `906FD493DDDEC19239D31BE87220EECAA08DA4F782C4B537ECE8AF0880B08212`
+- `Vista Capture-1.6.9-arm64-setup.exe`: `E411D9BA3771347C8EC4B30F1A743D3A99773D57ED848D19F49EFC92575CFA3D`
+- `Vista Capture-1.6.9-arm64-win.zip`: `B54B966E0E3886C14C115176AEEAE52C94F0B6BD60E05B2A6A326E0680677073`
